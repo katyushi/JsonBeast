@@ -1,55 +1,55 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      JSON Beast Test Site
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="dark">
+        <ion-title>
+            JSON Beast Test Site
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-      <ion-label>
-          <strong>
+    <ion-label>
+        <strong>
             Nome:
-          </strong> {{name}}
-      </ion-label>
-      <br>
-      <br>
-      <ion-label>
-          <strong>
+        </strong> {{name}}
+    </ion-label>
+    <br>
+    <br>
+    <ion-label>
+        <strong>
             Data de Nascimento:
-          </strong> {{bday}}
-      </ion-label>
-      <br>
-      <br>
-      <ion-label>
-          <strong>
+        </strong> {{bday}}
+    </ion-label>
+    <br>
+    <br>
+    <ion-label>
+        <strong>
             Lugar de Nascimento:
-          </strong> {{pob}}
-      </ion-label>
-      <br>
-      <br>
-      <ion-label *ngFor="let guns of baio">
+        </strong> {{pob}}
+    </ion-label>
+    <br>
+    <br>
+    <ion-label *ngFor="let guns of baio">
         <strong>
-          Trabalhos:
-        </strong> {{guns.title}} 
+            Trabalhos:
+        </strong> {{guns.title}}
         <strong>
-          como
+            como
         </strong> {{guns.character}}
         <strong>
-          //
+            //
         </strong>
-      </ion-label>
-      <br>
-      <br>
-      <ion-label>
-          <strong>
+    </ion-label>
+    <br>
+    <br>
+    <ion-label>
+        <strong>
             Biografia:
-          </strong> {{bio}}
-      </ion-label>
-      <br>
-      <br>
-      <ion-card *ngFor="let power of ima">
-          <img src="https://image.tmdb.org/t/p/w500/{{power.file_path}}">
-      </ion-card>
-          <br>
+        </strong> {{bio}}
+    </ion-label>
+    <br>
+    <br>
+    <ion-card *ngFor="let power of ima">
+        <img src="https://image.tmdb.org/t/p/w500/{{power.file_path}}">
+    </ion-card>
+    <br>
 </ion-content>
